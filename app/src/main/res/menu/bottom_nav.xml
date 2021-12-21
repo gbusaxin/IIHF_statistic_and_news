@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:id="@+id/id_teams"
-        android:title="@string/teams"
-        android:icon="@drawable/ic_people"/>
-
     <item android:id="@+id/id_tourney"
         android:title="@string/tourney"
         android:icon="@drawable/ic_hockey"/>
@@ -12,5 +8,9 @@
     <item android:id="@+id/id_stadiums"
         android:title="@string/sstadiums"
         android:icon="@drawable/ic_castle"/>
+
+    <item android:id="@+id/id_settings"
+        android:title="@string/settings"
+        android:icon="@drawable/ic_settings"/>
 
 </menu>

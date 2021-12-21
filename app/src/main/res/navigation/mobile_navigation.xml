@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.iihfstatisticandnews.presentation.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:name="com.example.iihfstatisticandnews.presentation.ui.news.NewsFragment"
+        android:label="@string/news"
+        tools:layout="@layout/fragment_news" />
 
     <fragment
         android:id="@+id/nav_gallery"
         android:name="com.example.iihfstatisticandnews.presentation.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
+        android:label="@string/main"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.example.iihfstatisticandnews.presentation.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:name="com.example.iihfstatisticandnews.presentation.ui.slideshow.TeamsFragment"
+        android:label="@string/teams"
+        tools:layout="@layout/fragment_teams" />
 </navigation>

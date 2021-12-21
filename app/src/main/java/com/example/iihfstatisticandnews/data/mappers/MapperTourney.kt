@@ -23,7 +23,6 @@ class MapperTourney {
         enemy2 = dto.enemy2?:"",
         date = dto.date?:"",
         group = dto.group?:"",
-        result = dto.result?:"",
-        id = 0
+        result = dto.result?:""
     )
 }

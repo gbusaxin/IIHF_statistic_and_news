@@ -4,13 +4,17 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.example.iihfstatisticandnews.data.models.NewsDbModel
+import com.example.iihfstatisticandnews.data.models.StadiumDbModel
 import com.example.iihfstatisticandnews.data.models.TourneyDbModel
 
 @Database(
     entities = [
-        TourneyDbModel::class
+        TourneyDbModel::class,
+        StadiumDbModel::class,
+        NewsDbModel::class
     ],
-    version = 1, exportSchema = false
+    version = 2, exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {
     companion object {

@@ -18,6 +18,8 @@ class GalleryFragment : Fragment() {
     private lateinit var binding: FragmentGalleryBinding
 
     private val tourneyFragment = TourneyFragment()
+    private val stadiumFragment = StadiumFragment()
+    private val settingsFragment = SettingsFragment()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -35,7 +37,10 @@ class GalleryFragment : Fragment() {
         bottom_nav.setOnItemSelectedListener {
             when(it.itemId){
                 R.id.id_tourney -> replaceFragment(tourneyFragment)
+                R.id.id_stadiums -> replaceFragment(stadiumFragment)
+                R.id.id_settings -> replaceFragment(settingsFragment)
             }
+            true
         }
     }
 
