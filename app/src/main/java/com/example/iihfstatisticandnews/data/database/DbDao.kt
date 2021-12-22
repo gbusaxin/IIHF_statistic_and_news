@@ -7,6 +7,7 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.example.iihfstatisticandnews.data.models.NewsDbModel
 import com.example.iihfstatisticandnews.data.models.StadiumDbModel
+import com.example.iihfstatisticandnews.data.models.TeamDbModel
 import com.example.iihfstatisticandnews.data.models.TourneyDbModel
 
 @Dao
@@ -32,5 +33,14 @@ interface DbDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertNewsList(news: List<NewsDbModel>)
+
+    @Query("SELECT * FROM team_info")
+    fun getTeamList(): LiveData<List<TeamDbModel>>
+
+    @Query("SELECT * FROM team_info WHERE country ==:country")
+    fun getTeam(country: String): LiveData<TeamDbModel>
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertTeamList(teams: List<TeamDbModel>)
 
 }

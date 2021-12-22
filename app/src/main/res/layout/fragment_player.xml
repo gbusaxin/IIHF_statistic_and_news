@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/full_transparent"
-    tools:context=".presentation.ui.teams.TeamsFragment">
+    tools:context=".presentation.ui.teams.PlayerFragment">
 
 
     <androidx.recyclerview.widget.RecyclerView
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/item_team"
-        android:id="@+id/rvTeams"
+        tools:listitem="@layout/item_player"
+        android:id="@+id/rvPlayers"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="1dp"

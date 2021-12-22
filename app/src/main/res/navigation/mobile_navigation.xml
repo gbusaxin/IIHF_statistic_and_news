@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.example.iihfstatisticandnews.presentation.ui.slideshow.TeamsFragment"
+        android:name="com.example.iihfstatisticandnews.presentation.ui.teams.TeamsFragment"
         android:label="@string/teams"
         tools:layout="@layout/fragment_teams" />
 </navigation>
