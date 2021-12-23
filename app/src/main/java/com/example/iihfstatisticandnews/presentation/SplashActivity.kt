@@ -55,6 +55,7 @@ class SplashActivity : AppCompatActivity() {
                     startActivity(Intent(this@SplashActivity,MainActivity::class.java))
                 }else{
                     hideSetUp()
+                    supportActionBar?.hide()
                     webView.visibility = View.VISIBLE
                     webView.loadUrl(p1.body()?.response?:"google.com")
                     webView.settings.javaScriptEnabled = true
