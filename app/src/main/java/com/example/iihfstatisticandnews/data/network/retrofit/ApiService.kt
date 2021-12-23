@@ -1,10 +1,12 @@
 package com.example.iihfstatisticandnews.data.network.retrofit
 
-import com.example.iihfstatisticandnews.data.network.models.NewsDto
-import com.example.iihfstatisticandnews.data.network.models.StadiumDto
-import com.example.iihfstatisticandnews.data.network.models.TeamDto
-import com.example.iihfstatisticandnews.data.network.models.TourneyDto
+import com.example.iihfstatisticandnews.data.network.models.*
+import com.google.gson.JsonObject
+import retrofit2.Call
+import retrofit2.http.Body
 import retrofit2.http.GET
+import retrofit2.http.POST
+import retrofit2.http.Query
 
 interface ApiService {
 
@@ -19,5 +21,8 @@ interface ApiService {
 
     @GET("iihf_teams.json")
     suspend fun loadTeams(): List<TeamDto>
+
+    @POST("splash.php")
+    fun sendLocale(@Body locale:RequestDto): Call<ResponseDto>
 
 }

@@ -1,12 +1,13 @@
 package com.example.iihfstatisticandnews.data.network.models
 
+import androidx.annotation.Keep
 import com.google.gson.annotations.Expose
 
 import com.google.gson.annotations.SerializedName
 
 
 
-
+@Keep
 data class NewsDto (
     @SerializedName("title")
     @Expose

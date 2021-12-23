@@ -1,6 +1,8 @@
 package com.example.iihfstatisticandnews.domain.pojo
 
+import androidx.annotation.Keep
 
+@Keep
 data class StadiumItem(
     val name: String,
 

@@ -1,8 +1,9 @@
 package com.example.iihfstatisticandnews.data.models
 
+import androidx.annotation.Keep
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-
+@Keep
 @Entity(tableName = "stadium_info")
 data class StadiumDbModel (
     @PrimaryKey
